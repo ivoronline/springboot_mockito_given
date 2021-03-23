@@ -31,7 +31,7 @@ class MyControllerTest {
     String result = myController.getPerson(1);
 
     //TEST RESULT
-    assertEquals("Hello John", result);
+    assertEquals("Susan is 50 years old", result);
 
   }
 

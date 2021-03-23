@@ -18,10 +18,12 @@ public class MyController {
   public String getPerson(@RequestParam Integer id) {
 
     //GET PERSON
-    Person person = personRepository.getPersonById(id);
+    Person  person = personRepository.getPersonById(id);
+    String  name   = person.name;
+    Integer age    = person.age;
 
-    //GREET PERSON
-    return "Hello " + person.name;
+    //RETURN SOMETHING
+    return name + " is " + age + " years old";
 
   }
 
